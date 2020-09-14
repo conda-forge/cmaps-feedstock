@@ -5,7 +5,7 @@ Home: https://github.com/hhuangwx/cmaps
 
 Package license: GPL-3.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: user defined colormaps in matplotlib
 
