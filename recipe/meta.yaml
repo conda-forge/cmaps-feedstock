@@ -1,13 +1,13 @@
 {% set name = "cmaps" %}
-{% set version = "2.0.0" %}
+{% set version = "2.0.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: "https://files.pythonhosted.org/packages/57/a8/a7c56fe258e1e6b868e246c6c981ef32e253987dd1f9544f5dc9fa882689/cmaps-2.0.0.tar.gz"
-  sha256: "4842859d80084837ce65542001e029e55eeb5a69d6003921ee68561d0da74bb5"
+  url: "https://files.pythonhosted.org/packages/2f/c8/15cb109031c1520caa02730eae83f760e15ed39aad1bc7932e6b6a42cf5d/cmaps-2.0.1.tar.gz"
+  sha256: "6344fe9874281ce869af63c318c07632e73021019334d204617fcd3f28d55fa7"
 
 build:
   number: 0
