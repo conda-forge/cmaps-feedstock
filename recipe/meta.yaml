@@ -1,13 +1,13 @@
 {% set name = "cmaps" %}
-{% set version = "1.0.5" %}
+{% set version = "2.0.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: "https://files.pythonhosted.org/packages/bc/18/9694f458281cc0f4990ad91e318f604ad8b86159accd84a9380dcbb6f10f/cmaps-1.0.5.tar.gz"
-  sha256: "8ee708bf6c4024dcd060d658aa0cbba740ac0472e5638512b4764dea1e928c46"
+  url: "https://files.pythonhosted.org/packages/57/a8/a7c56fe258e1e6b868e246c6c981ef32e253987dd1f9544f5dc9fa882689/cmaps-2.0.0.tar.gz"
+  sha256: "4842859d80084837ce65542001e029e55eeb5a69d6003921ee68561d0da74bb5"
 
 build:
   number: 0
@@ -19,7 +19,8 @@ requirements:
     - pip
     - python >=3.6
   run:
-    - matplotlib-base
+    - matplotlib-base >=2.2
+    - packaging
     - numpy
     - python >=3.6
 
