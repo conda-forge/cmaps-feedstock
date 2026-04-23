@@ -10,21 +10,23 @@ source:
   sha256: "6344fe9874281ce869af63c318c07632e73021019334d204617fcd3f28d55fa7"
 
 build:
-  number: 0
+  number: 1
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
   noarch: python
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
   run:
     - matplotlib-base >=2.2
     - packaging
     - numpy
-    - python >=3.6
+    - python >={{ python_min }}
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - cmaps
 
